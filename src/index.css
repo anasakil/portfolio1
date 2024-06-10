@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-width {
+  @apply lg:mx-auto lg:px-24 xl:px-48 px-5;
+}
+.bg-gradient {
+  @apply bg-gradient-to-r from-pink-600 via-purple-500 to-sky-500;
+}
+.text-gradient {
+  @apply bg-clip-text bg-gradient text-transparent;
+}
+.section {
+  @apply pt-28 xl:pt-28 2xl:pt-44;
+}
+.text-content {
+  @apply dark:text-light-content text-dark-content;
+}
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-image: linear-gradient(
+    45deg,
+    #6a11cb 40%,
+    #2575fc 100%
+  );
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    45deg,
+    #2575fc 10%,
+    #6a11cb 100%
+  );
+}
+
